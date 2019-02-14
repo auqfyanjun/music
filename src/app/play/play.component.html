@@ -1,0 +1,66 @@
+<div class="bottomplaycontiner">
+
+  <div class="playGroup clear">
+
+    <div class="playBtns">
+
+      <a href="#" class="preBtn" title="上一首" (click)="playx('-')"></a>
+      <a href="#" class="playOrPauseBtn" title="播/停" (click)="playOrPause()" [ngClass]='{"playBtnPause":!isCanPlaying ,"playBtnplay":isCanPlaying }'></a>
+      <a href="#" class="nextBtn" title="下一首" (click)="playx('+')"></a>
+
+    </div>
+    
+    <div class="nikeImg">
+      <img src='http://s4.music.126.net/style/web2/img/default/default_album.jpg' class="imgx"/>
+      <a *ngIf="musicInfo?.songId" [routerLink]="['homes/find/songinfo/detail',musicInfo?.songId]"></a>
+    </div>
+
+    <div class="singInfo">
+
+      <div class="singInfoname">
+        
+        <div class="mid">
+          <a *ngIf="musicInfo?.songId" [routerLink]="['homes/find/songinfo/detail',musicInfo?.songId]" class="name">{{musicInfo?.song}}</a>
+          <a *ngIf="musicInfo?.singerId" [routerLink]='["homes/find/artilist/onesg/",musicInfo?.singerId]' class="singerlink">{{musicInfo?.singer}}</a>
+          <a href="#" class="songlistlink" title="来自歌单"></a>
+        </div>
+
+      </div>
+
+      <div class="proAndtime">
+        <app-proMusic (valueSrcProLineChange)="proMusicChange($event)" [valueSrcProLine]="scalMProLine" (isDragEvent)="isdragFunc($event)"></app-proMusic>
+
+        <div class="timeTitle">
+          <span class="myPlayerTime" [innerHTML]="innerText1">
+            00:00
+          </span>
+          <span>
+            /
+          </span>
+          <span class="myPlayerTime" [innerHTML]="innerText2">
+            00:00
+          </span>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="playsup">
+      <a href="#" class="supadd"></a>
+      <a href="#" class="supshare"> </a>
+      <span class="volLine">
+        <a href="javascript:void(0);" class="supvolum"></a>
+        <app-proVol (valueSrcProLineChange)="proVolumeChange($event)" [valueSrcProLine]="scalVProLine"></app-proVol>
+      </span>
+      <a href="#" class="supplayloop"> </a>
+      <a href="#" class="suppplaylist">
+        <span class="numTxt">{{ searchMusic.length || 0 }}</span>
+      </a>
+    </div>
+
+  </div>
+</div>
+
+<audio [src]='songUrl' #myaudio  [volume]="proVolume" (durationchange)="myDurationchange($event)"
+  (canplay)="canplay1($event)" (timeupdate)="timeupdate1($event)" (ended)="endedChange()" preload="metadata">
+</audio>

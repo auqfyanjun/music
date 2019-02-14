@@ -1,0 +1,24 @@
+<div class="carouse" [ngStyle]="{'background': backgroundUrl,'opacity': myOpacity}" (mouseenter) ='stop()' (mouseleave)='start()' >
+  
+  <div class="wrap">
+    <div class="bgwrap" >
+      <img [src]="banners[cindex]?.picUrl" class="imgs">
+      <a  *ngIf="( banners[cindex]?.url )&&( !banners[cindex]?.url.startsWith('http') )" [routerLink]="[ banners[cindex]?.url ]" class="imgitem" > 
+      </a>
+      <a  *ngIf="banners[cindex]?.url.startsWith('http')" [href]=" banners[cindex]?.url " class="imgitem" > 
+      </a>
+     
+
+      <div class="download">
+        <a class="downbtn" href="https://music.163.com/#/download">下载客户端</a>
+        <p>PC 安卓 iPhone WP iPad Mac 六大客户端</p>
+      </div>
+    </div>
+    <a href="javascript:void(0)" class="btnl carouseicon" (click)="preNext(-1)">&lt;</a>
+    <a href="javascript:void(0)" class="btnr carouseicon" (click)="preNext(+1)">&gt;</a>
+
+    <div class="dots">
+       <a  *ngFor="let item of dotList" class="dotitem" href="#" [ngClass]="{'active': item === cindex }" (click)="changeBg(item)"></a>  
+    </div>
+  </div>
+</div>

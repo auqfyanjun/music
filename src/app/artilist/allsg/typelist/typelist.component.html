@@ -1,0 +1,34 @@
+<div class="typel">
+  
+  <div class="titleb" >
+    <h2 class="name">推荐</h2>
+    
+    <div class="item">
+      <a [routerLink]=' [ "sug/wy" ]' routerLinkActive="routeractive">推荐歌手</a>
+    </div>
+
+    <div class="item">
+      <a [routerLink]=' [ "oursinger/wy" ] ' routerLinkActive="routeractive">入驻歌手</a>
+    </div>
+
+  </div>
+
+  <div *ngFor="let item of data; let i=index" class="titleb addpm" >
+    <h2 class="name">{{item.name}}</h2>
+    
+    <div class="item">
+      <a [routerLink]=' [ "sgby" , item.id + "001" ]' routerLinkActive="routeractive">{{item.item[0]}}</a>
+    </div>
+
+    <div class="item">
+      <a [routerLink]=' [  "sgby" , item.id + "002" ] ' routerLinkActive="routeractive">{{item.item[1]}}</a>
+    </div>
+
+    <div class="item">
+      <a [routerLink]=' [  "sgby" , item.id + "003" ] ' routerLinkActive="routeractive">{{item.item[2]}}</a>
+    </div>
+
+  </div>
+ 
+</div>
+

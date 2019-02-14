@@ -1,0 +1,37 @@
+.progress {
+    height: 8px;
+    width: 493px;
+}
+
+.progressContainer { 
+    width: 493px;
+    height: 8px;
+    background-color: #191919;
+    border-radius: 4px;
+    position: relative;
+}
+
+.progressContainer:hover {
+    cursor: pointer;
+}
+
+.progressLine {
+    width: 0px;
+    height: 8px;
+    background-color: #ff0000;
+    border-radius: 4px;
+}
+
+.targetBtn {
+    width: 18px;
+    height: 18px;
+    background: url(https://s2.music.126.net/style/web2/img/iconall.png?9c637b5107f4ee070505b6933813722d) no-repeat 0 9999px;
+    background-position: -2px -252px;
+    position: absolute;
+    top: -5px;
+    left: -9px;
+}
+
+.targetBtn:hover {
+    background-position: -2px -282px;
+}

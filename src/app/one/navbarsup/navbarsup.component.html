@@ -1,0 +1,30 @@
+
+
+<div class="littleTop">
+    <div class="littleTop-sup">
+        <ul class="items clear">
+            <li>
+                <a [routerLink]="['recommon']" routerLinkActive="active">推荐</a>
+            </li>
+            <li>
+                <a [routerLink]="['board']" routerLinkActive="active">排行榜</a>
+            </li>
+            <li>
+                <a [routerLink]="['songlist']" routerLinkActive="active">歌单</a>
+            </li>
+            <li>
+                <a [routerLink]="['radiolist']" routerLinkActive="active">主播电台</a>
+            </li>
+            <li>
+                <a [routerLink]="['artilist']" routerLinkActive="active">歌手</a>
+            </li>
+            <li>
+                <a [routerLink]="['album']" routerLinkActive="active">新碟上架</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="bg">
+    <router-outlet></router-outlet>
+</div>

@@ -1,0 +1,47 @@
+<div class="barandlist">
+
+  <div class="sbar clear">
+
+    <h3 class="barname">{{barTitle}}</h3>
+
+    <a *ngIf="showMore" [routerLink]='[ "../../oursinger/wy" ]' class="more">更多 ></a>
+
+  </div>
+  <!-- 可以从父组件插入class为az的 元素 -->
+  <ng-content select=".az"></ng-content>
+
+  <div class="singerlist">
+
+    <ul class="data clear">
+
+      <!-- (A全图片模式) 1： 第10到15此5个item上方加虚线 2： 第11个开始的item没有图片且内边距改变  (B非图片模式) 没有线条和li标签的差异化padding,此模式下10个以后也是有图片的-->
+
+      <li class="liitem" *ngFor=" let item of singerInfo;let i = index" [ngClass]="{'newlipadding': hasBotModel && i >= 10,'addline': hasBotModel && i > 9 && i < 15 }">
+
+        <div class="cov" *ngIf=" !hasBotModel || i < 10 ">
+
+          <img [src]=" item?.picUrl + '?param=130y130' " />
+
+          <a *ngIf="item?.id" [routerLink]='["../../../onesg",item?.id]' class="link"></a>
+
+        </div>
+
+        <div class="bot clear">
+
+          <a *ngIf="item?.id" [routerLink]='["../../../onesg",item?.id]' class="name floatx">{{item?.name}}</a>
+
+          <a href="" class="userhome" *ngIf=" item?.accountId ">
+
+            <i class="sicon"></i>
+
+          </a>
+
+        </div>
+
+      </li>
+
+    </ul>
+
+  </div>
+
+</div>

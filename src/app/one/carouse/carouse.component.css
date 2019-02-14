@@ -1,0 +1,99 @@
+.carouse {
+  transition: all 1s;
+}
+.wrap {
+  width: 982px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.bgwrap {
+  position: relative;
+}
+
+.imgs {
+  width: 730px;
+  height: 336px;
+}
+
+.imgitem {
+  float: left;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 730px;
+  height: 336px;
+}
+
+.wrap .download,
+.download .downbtn {
+  background: url(https://s2.music.126.net/style/web2/img/index/download.png?90694c7a3e70b59fba0889751ff71e58) no-repeat 0 0;
+}
+
+.wrap .download {
+  position: absolute;
+  top: 0;
+  z-index: 20;
+  right: -1px;
+  width: 254px;
+  height: 336px;
+}
+.download .downbtn {
+  display: block;
+  width: 215px;
+  height: 56px;
+  margin: 212px 0 0 19px;
+  text-indent: -9999px;
+  background-position: 0 9999px;
+}
+.download .downbtn:hover {
+  background-position: 0 -340px;
+}
+.download p {
+  margin: 10px auto;
+  text-align: center;
+  color: #8d8d8d;
+}
+
+.carouseicon {
+  display: block;
+  position: absolute;
+  top: 50%;
+  margin-top: -31px;
+  width: 37px;
+  height: 63px;
+  text-indent: -9999px;
+  background: url(https://s2.music.126.net/style/web2/img/index/banner.png?88aaa73328fac54e6cfb8ac156ffe096) 0 9999px no-repeat;
+}
+.btnl {
+  left: -68px;
+  background-position: 0 -360px;
+}
+.btnl:hover {
+  background-position: 0 -430px;
+}
+.btnr {
+  right: -68px;
+  background-position: 0 -508px;
+}
+.btnr:hover {
+  background-position: 0 -578px;
+}
+.dots {
+    position: absolute;
+    top: 310px;
+    left: 0;
+    width: 730px;
+    height: 20px;
+    text-align: center;
+}
+.dots .dotitem {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url(https://s2.music.126.net/style/web2/img/index/banner.png?88aaa73328fac54e6cfb8ac156ffe096) 0 9999px no-repeat;
+    background-position: 3px -343px;
+}
+.dots .active {
+    background-position: -16px -343px;
+}

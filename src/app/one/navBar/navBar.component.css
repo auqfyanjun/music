@@ -1,0 +1,100 @@
+
+.icon {
+    background: url(https://s2.music.126.net/style/web2/img/frame/topbar.png?914bf8a1e7874dde0b97da9bb03ded62) no-repeat 0 9999px;
+}
+
+.title  {
+    width: 176px;
+    height: 69px;
+    background-position: 0 0;
+    text-indent: -9999px;
+    color: white;
+    user-select: none;
+}
+
+.title .ttxt {
+    float: left;
+    width: 157px;
+    padding-right: 20px;
+}
+
+.top {
+    background-color: #404040;  
+    height: 70px;      
+}
+
+.top-sup {
+    text-align: center;
+    width: 1100px;
+    height: 70px;   
+    line-height: 70px;  
+    background-color: #404040;  
+    margin: 0 auto;
+}
+
+.linklist a , .log a{
+    float: left;
+    color: #ccc; 
+    height: 70px;
+    line-height: 70px;
+    padding: 0 19px;
+    font-size: 14px;
+}
+
+.linklist a:hover, .log a:hover {
+    text-decoration: none;
+    background-color: #000;  
+}
+
+.dl {
+    position: relative;
+}
+
+.dl .dicon {
+    display: block;
+    position: absolute;
+    top: 21px;
+    left: 100px;
+    width: 28px;
+    height: 19px;
+    background-position: -190px 0;
+}
+
+.search {
+    position: relative;
+    margin-left: 90px;
+}
+
+.search .searchIn {  
+    width: 156px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    height: 34px;
+    line-height: 34px;
+    text-indent: 25px;
+    outline: none;
+}
+
+.search .searchicon {
+    position: absolute;
+    background: url(https://s2.music.126.net/style/web2/img/frame/topbar.png?914bf8a1e7874dde0b97da9bb03ded62) no-repeat 0 9999px;
+    background-position: -7px -106px;
+    width: 18px;
+    height: 18px;
+    display: block;
+    position: absolute;
+    left: 5px;
+    top: 26px;  
+}
+
+
+.active {
+    background: #000;
+    color: #fff;
+}
+
+
+
+
+
+

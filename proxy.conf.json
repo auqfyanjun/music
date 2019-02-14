@@ -1,0 +1,6 @@
+{
+    "/weapi": {
+        "target": " https://023415.xyz",
+        "changeOrigin": true
+    }
+}

@@ -1,0 +1,50 @@
+/* You can add global styles to this file, and also import other style files */
+
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div{margin:0;padding:0;border:0;}
+
+body {
+    background-color: #F5F5F5;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul,ol{
+    list-style-type:none;
+}
+
+a {
+    text-decoration: none;	
+    font-size: 12px;
+    color: #333;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:focus {
+    outline: none;
+} 
+
+.clear:after {
+    content: "";
+    display: block;
+    clear: both;			
+}
+
+.floatx {
+    float: left;
+}
+
+img,input {
+    border: none;
+}
+input:focus {
+    border: none;
+    outline: none;
+}
+
+input[type="checkbox"] {
+    margin: 0;
+}
+

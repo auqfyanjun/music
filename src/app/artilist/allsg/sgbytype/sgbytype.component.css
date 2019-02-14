@@ -1,0 +1,30 @@
+.az {
+    margin: 20px 0;
+    margin-left: -3px;
+}
+
+.itemli {
+    float: left;
+    margin-left: 3px; 
+}
+
+.itemli .lia {
+    display: block;
+    min-width: 21px;
+    line-height: 24px;
+    text-align: center;
+    font-size: 14px;
+}
+
+
+.newlia , .active{
+    background: #c20c0c;
+    border-radius: 2px;
+    color: #fff;
+}
+
+.newwidth {
+    width: 45px;
+}
+
+

@@ -1,0 +1,33 @@
+.contet {
+    width: 985px;
+    background-color: #fff;
+    border: 1px solid #d3d3d3;
+    border-width: 0 1px;
+    margin: 0 auto;  
+}
+.contet::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+.fastBoard,.newBoard,.personBoard {
+    float: left;
+}
+.personBoar{
+    border-right: 1px solid #ccc;;
+}
+
+.borderrigth {
+    margin-top: 20px;
+    border-right: 1px solid #ccc;
+}
+
+.homeleft {
+    float: left;
+    padding: 20px;
+    border-right: 1px solid #d3d3d3;
+}
+
+.homeright {
+    float: right; 
+}

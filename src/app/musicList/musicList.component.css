@@ -1,0 +1,46 @@
+/* .listbg {
+    background-color: #F5F5F5;
+} */
+.container {
+    padding: 40px;
+    width: 900px;
+    background-color: #ffffff;
+    margin: 0 auto;
+}
+.schicon {
+    background: url(https://s2.music.126.net/style/web2/img/sprite.png?c1608e2a98f56aff006000d610c6cfd1) no-repeat 0 9999px;
+}
+
+.sch-in {
+    width: 420px;
+    height: 40px;
+    background-position: 0 0;
+    margin: 0 auto;
+}
+
+.sch-in .sch-input {
+    width: 320px;
+    height: 17px;
+    margin: 12px 0 0 20px;
+    padding: 0;
+    background: #fff;
+    border: none;
+}
+
+.sch-in .sch-input:focus {
+    border: none;
+    outline: none;
+}
+
+.sch-in .asch {
+    float: right;
+    width: 50px;
+    height: 40px;
+    text-indent: -9999px;
+}
+
+.sch-in .asch:hover {
+    background-position: -430px 0;
+}
+
+

@@ -1,0 +1,13 @@
+<div class="pages">
+
+  <a *ngIf= "pageTotal" class="first"  [ngClass]="{'firststopclick': pageIndex === 1 }" (click)="pre()">上一页</a>
+
+  <ng-container *ngFor="let item of btnTextArr;let i = index ">
+    <i *ngIf=" canSHow(i,'first') ">...</i>
+    <a class="pagenum" [ngClass]="{'check': pageIndex === btnTextArr[i] }" (click)="change(btnTextArr[i])">{{item}}</a>
+    <i *ngIf=" canSHow(i,'end') ">...</i>
+  </ng-container>
+
+  <a  *ngIf= "pageTotal" class="end" [ngClass]="{'endstopclick': pageIndex === pageTotal }" (click)="next()">下一页</a>
+
+</div>

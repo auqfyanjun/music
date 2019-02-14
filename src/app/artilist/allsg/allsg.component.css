@@ -1,0 +1,17 @@
+
+.singerall {
+    width: 982px;
+    border: 1px solid #ccc;
+    background-color: #FFFFFF;
+    margin: 0 auto;
+}
+
+.sl ,.sr {
+    float: left;
+}
+
+.sr {
+    width: 720px;
+    padding: 39px;
+    border-left: 1px solid #ccc;
+}

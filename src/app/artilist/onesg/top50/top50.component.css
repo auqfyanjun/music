@@ -1,0 +1,274 @@
+.btn {
+    height: 31px;
+    line-height: 31px;
+    margin: 20px 0 10px;
+}
+
+.btn .playlist {
+    float: left;
+    height: 31px;
+    background-color: #2273C2;
+    /* font-size: 12px; */
+    color: white;
+    border-radius: 4px 0 0 4px;
+    padding: 0 5px 0 0;
+    background-color: #3987D2;
+    cursor: pointer;
+}
+
+.btn .playlist:hover {
+    background-color: #539EE4;
+}
+
+.playlist .iconcontainer {
+    padding: 0 7px 0 8px;
+    font-style: normal;
+    display: block;
+}
+
+.btn .icon,
+.btn .recode {
+    background: url(https://s2.music.126.net/style/web2/img/button2.png?0eb80086f1c7c9c85aa8f1b2565ca3ac) no-repeat 0 9999px;
+}
+
+.playlist .iconcontainer .playbtn {
+    display: block;
+    width: 20px;
+    height: 18px;
+    float: left;
+    background-position: 0 -1622px;
+    margin: 6px 2px 2px 0;
+}
+
+.btn .playadd {
+    width: 31px;
+    display: block;
+    height: 31px;
+    background-position: 0 -1588px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.btn .playadd:hover {
+    background-position: -40px -1588px;
+}
+
+.btn .recode {
+    display: block;
+    float: left;
+    height: 31px;
+    margin-right: 6px;
+    padding-right: 5px;
+    border-radius: 4px;
+    /* font-size: 12px; */
+    background-position: right -1020px;
+    cursor: pointer;
+}
+
+.btn .recode:hover {
+    background-position: right -1106px;
+}
+
+.recode .recodeicon {
+    font-style: normal;
+    /* font-size: 12px; */
+    background-position: 0 -977px;
+    float: left;
+    display: block;
+    padding: 0 2px 0 28px;
+}
+
+.work i {
+    font-style: normal
+}
+
+
+/*分割 分割 分割 分割*/
+
+
+.listdetail .indector,
+.listdetail .title,
+.listdetail .duration,
+.listdetail .singer,
+.listdetail .alum {
+    padding-left:10px;
+    padding-right:10px; 
+}
+
+
+/* .listdetail .title,
+.listdetail .duration,
+.listdetail .singer,
+.listdetail .alum {
+  padding-left: 10px
+} */
+
+
+
+.listdetail {
+    height: 30px;
+    line-height: 30px;
+}
+
+
+.songlist{
+    color: #333;
+}
+
+
+.ullist .indector {
+    width: 74px;
+    height: 100%;
+}
+
+.ullist .title {
+    width: 309px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+}
+
+.ullist .duration {
+    width:69px;
+}
+
+
+
+.ullist .alum{
+    width: 108px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+}
+
+.title .canshow img,
+.title .canshow a {
+    float: left;
+}
+
+.title .canshow {
+    margin-top: 10px;
+}
+
+.indector .index {
+    width: 25px;
+    margin-left: 5px;
+}
+
+.indector .play {
+    float: right;
+    margin-right: 10px;
+    width: 17px;
+    height: 17px;
+    margin: 7px 0 0 0px;
+    background: url(https://s2.music.126.net/style/web2/img/table.png?e11b4f8f28450c287ef9dd19204801b7) no-repeat 0 9999px;
+    background-position: 0 -103px;
+    cursor: pointer;
+}
+
+.indector .play:hover {
+    background-position: 0 -128px;
+}
+
+.duration .tabbtns {
+    display: none;
+}
+
+.listdetail:hover .tabbtns {
+    display: block;
+    font-size: 0;
+    width: 90px;
+    margin-left: -10px;    
+    
+}
+
+.listdetail:hover .times {
+    display: none;
+}
+
+.tabbtns span {
+    cursor: pointer;
+    
+}
+
+.tabbtns .addplay ,
+.tabbtns .record,
+.tabbtns .share,
+.tabbtns .down {
+    display: inline-block;
+    width: 18px;
+    height: 16px;
+    margin-left: 4px;
+    margin-bottom: -10px;
+    background: url(https://s2.music.126.net/style/web2/img/table.png?e11b4f8f28450c287ef9dd19204801b7);
+   
+}
+
+.tabbtns .addplay {
+    /* margin-bottom: -10px; */
+    background: url(https://s2.music.126.net/style/web2/img/icon.png?601a3646019981bc04d77c43e6987e2a);
+    background-position: 3px -700px;
+}
+
+.tabbtns .record {
+    background-position: 0 -174px;
+}
+
+.tabbtns .share {
+    background-position: 0 -195px;
+}
+
+.tabbtns .down {
+    background-position: -80px -174px;
+}
+
+.tabbtns .addplay:hover {
+    background-position: -19px -700px;
+}
+
+.tabbtns .record:hover {
+    background-position: -20px -174px;
+}
+
+.tabbtns .share:hover {
+    background-position: -20px -195px;
+}
+
+.tabbtns .down:hover {
+    background-position: -103px -174px
+}
+
+.wrap{
+
+   
+    background-color: #F7F7F7;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

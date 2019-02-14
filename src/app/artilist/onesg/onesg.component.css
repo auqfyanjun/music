@@ -1,0 +1,96 @@
+
+
+.singerall {
+    width: 980px;
+}
+
+
+.singerbox {
+   
+    width: 980px;
+  
+    background-color: #FFFFFF;
+    margin: 0 auto;
+}
+
+.singerleft {
+    width: 640px;
+    padding: 25px 29px 40px 39px;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+
+.singerright {
+    width: 200px;
+    height: 423px;
+    padding: 20px 40px 40px 30px;
+}
+
+.singerinfo {
+    color: #333;
+}
+
+.nameinfo .name {
+    height: 34px;
+    line-height: 24px;
+    font-weight: normal;
+    font-size: 24px;
+    color: #333;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    word-wrap: normal;
+}
+
+.nameinfo .namesup {
+    padding-left: 10px;
+    font-size: 14px;
+    line-height: 32px;
+    color: #999;
+    font-weight: normal;
+}
+
+.singerimg {
+    display: block;
+    width: 640px;
+    height: 300px;
+}
+
+.listbar {
+    
+    background: url(https://s2.music.126.net/style/web2/img/tab.png?656a25e01dbbde767f2e9b95e11fefdf) no-repeat 0 9999px;;
+    border: 1px solid #ccc;
+    border-width: 0 1px;
+    background-position: 0 0;
+    background-repeat: repeat-x;
+    
+}
+
+.listbar .link {
+    float: left;
+    width: 138px;
+    height: 39px;
+    line-height: 39px;
+    text-align: center;
+    color: #333;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.listbar .link:hover{ 
+
+    border-top: 2px solid #D13030; 
+    height: 37px;
+    line-height: 35px;
+    
+}
+
+.listbar .active {
+
+    border-top: 2px solid #D13030;
+    border-left:1px solid #D5D5D5 ;
+    border-right:1px solid #D5D5D5 ;
+    height: 37px;
+    line-height: 35px;
+    background-color: #FCFCFC;
+}

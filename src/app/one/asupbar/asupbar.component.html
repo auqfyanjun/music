@@ -1,0 +1,13 @@
+<div class="topBar">
+  <div class="titlet">
+    <a href="#">{{barTitle}}</a>
+  </div>
+
+  <div class="rightt">
+    <a [routerLink]='[routerPath,routerParam]' class="floatx">更多 </a>
+    <i class="rightPict"></i>
+  </div>
+
+  <ng-content select=".topmusiccontainer"></ng-content>
+</div>
+

@@ -1,0 +1,71 @@
+<div class="btn clear">
+  <span href="#" class="playlist floatx" (click)='pushIds()'>
+    <i class="iconcontainer">
+      <span class="playbtn icon"></span>播放
+    </i>
+  </span>
+  <span class="playadd floatx icon"></span>
+
+  <span class="recode">
+    <i class="recodeicon icon">收藏热门50</i>
+  </span>
+
+   <span class="work">
+    <i class="icon">演唱作品</i>
+    <i class="icon">作词作品</i>
+    <i class="icon">作曲作品</i>
+  </span> 
+
+</div>
+
+
+
+
+
+<div class="songlist">
+
+  <ul class="clear ullist">
+
+    <li *ngFor="let item of searchMusic ;let indeof =index" class="listdetail" [ngClass]=' {"wrap":indeof%2==0} '>
+      <div class="floatx indector ">
+        <div class="floatx index">
+          {{indeof+1}}
+        </div>
+        <span class="play" (click)="playingone(item)">
+        </span>
+      </div>
+
+      <div class="title floatx">
+
+        <div class="titlesup">
+          <a *ngIf="item?.songId" [routerLink]="['../../../../songinfo/detail',item?.songId]" class="name">
+            {{item?.song}}
+          </a>
+        </div>
+
+      </div>
+
+      <div class="floatx duration">
+
+        <div class="times">
+          {{item?.timeTotal | timeformat}}
+        </div>
+
+        <div class="tabbtns">
+          <span title="添加到播放列表" class="addplay"></span>
+          <span title="收藏" class="record"></span>
+          <span title="分享" class="share"></span>
+          <span title="下载" class="down"></span>
+        </div>
+
+      </div>
+
+      <div class="floatx alum">
+        {{item?.alName}}
+      </div>
+
+    </li>
+
+  </ul>
+
+</div>

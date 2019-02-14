@@ -1,0 +1,28 @@
+<div class="top">
+    <div class="top-sup">
+        <h1  class="title icon floatx">
+            <a href="" class="ttxt">个人的学习</a>     
+        </h1>
+        <div class="linklist floatx">
+            <a [routerLink]="['find']" routerLinkActive="active">发现音乐</a>
+            <a [routerLink]="['mymusic']" routerLinkActive="active">我的音乐</a>
+            <a [routerLink]="['friend']" routerLinkActive="active">朋友</a>
+            <a [routerLink]="['product']" routerLinkActive="active">商城</a>
+            <a href="http://music.163.com/nmusician/web/index" routerLinkActive="active">音乐人</a>
+            <div class="dl floatx">
+                <a [routerLink]="['load']" >下载客户端</a>
+                <i class="dicon icon"></i>
+            </div>         
+        </div>
+        <div class="search floatx">
+              
+            <input type="text" class="searchIn" placeholder="音乐/视频/电台/用户" [(ngModel)]="searchSt" (keyup.enter)="notiedSearchMusicSer()" />
+            <i class="searchicon"></i>
+        </div>
+
+        <div class="log floatx">
+            <a href="#" class="video ">视频投稿</a>
+            <a href="#" class="login ">登录</a>
+        </div>
+    </div>
+</div>

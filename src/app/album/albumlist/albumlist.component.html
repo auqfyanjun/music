@@ -1,0 +1,46 @@
+<div class="allist">
+
+  <div class="altitle clear">
+    <h3 class="floatx">
+      <span>全部新碟</span>
+    </h3>
+
+    <div class="typelink floatx">    
+      <a [routerLink]="[ '../ALL' ]" routerLinkActive="active">全部</a>
+      <span class="line">|</span>
+      <a [routerLink]="[ '../ZH' ]"  routerLinkActive="active">华语</a>
+      <span class="line">|</span>
+      <a [routerLink]="[ '../EA' ]"  routerLinkActive="active">欧美</a>
+      <span class="line">|</span>
+      <a [routerLink]="[ '../KR' ]"  routerLinkActive="active">韩国</a>
+      <span class="line">|</span>
+      <a [routerLink]="[ '../JP' ]"  routerLinkActive="active">日本</a>
+    </div>
+  </div>
+
+  <ul class="albums clear">
+    <li *ngFor="let item of albums" class="alone floatx">
+      <div class="aleft">
+        <img [src]=" item?.alNPicUrl + '?param=130y130' " alt="" class="alimg floatx">
+        <a *ngIf="item?.alId" [routerLink]="[ '../../info',item?.alId] " class="allink floatx"></a>
+      </div>
+
+      <p class="dec">
+        <a *ngIf="item?.alId" [routerLink]=" [ '../../info',item?.alId] " class="tit sfc3">{{item.alName}}</a>
+      </p>
+
+      <p class="fthide">
+        <a *ngIf="item?.abSingerId" [routerLink]=" [ '../../../artilist/onesg' , item?.abSingerId ] " class="name sfc3">{{item.abSinger}}</a>
+      </p>
+
+    </li>
+  </ul>
+
+  <div class="fenye">
+    <app-page [pageTotalInput]="albumTotal"  [pageIndex] = "pageIndex+1" (pageIndexEvent)="searchx($event)" ></app-page>
+  </div>
+
+</div>
+
+
+

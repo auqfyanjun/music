@@ -1,0 +1,98 @@
+.allist {
+    padding: 40px;
+}
+
+.altitle {
+    height: 40px;
+    border-bottom: 2px solid #c20c0c;
+}
+
+.altitle h3 {
+    float: left;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.typelink {
+    margin: 12px 0 0 20px;
+}
+
+.typelink .line {
+    margin: 0 10px;
+    color: #c7c7c7;
+}
+
+.albums {
+    margin: 20px 0 0 -33px;
+}
+
+.alone {
+    float: left;
+    width: 153px;
+    height: 178px;
+    padding: 0 0 30px 33px;
+    line-height: 1.4;
+}
+
+.aleft {
+    width: 153px;
+    height: 130px;
+    position: relative;
+}
+
+.aleft .alimg {
+    width: 130px;
+    height: 130px;
+    display: block;
+}
+
+.aleft .allink {
+    width: 153px;
+    height: 130px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(https://s2.music.126.net/style/web2/img/coverall.png?4792067eec65f61878f3f4807170ea55) no-repeat 0 9999px;
+    background-position: 0 -845px;
+}
+
+
+.dec, .fthide{
+    width: 130px;
+}
+
+
+.sfc3{
+    display: inline-block;
+    vertical-align: middle;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+}
+
+.dec {
+    margin: 8px 0 3px;  
+}
+
+.dec .tit {
+    color: #000;
+    font-size: 14px;
+    width: 100%;
+}
+
+.fthide .sfc3 {
+    max-width: 85%;
+    color: #666;
+}
+
+.fenye {
+    margin: 20px 0;
+    text-align: center;
+}
+
+
+
+
+
+

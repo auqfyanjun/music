@@ -1,0 +1,214 @@
+.songtotal{
+    width: 900px;
+    min-height: 700px;
+    padding: 40px;
+    background-color: #fff;
+    border: 1px solid #d3d3d3;
+    border-width: 0 1px;
+    margin: 0 auto;
+}
+
+.toolbar {
+    height: 40px;
+    position: relative;
+    border-bottom: 2px solid #c20c0c;
+}
+
+.sicon {
+    background: url(https://s2.music.126.net/style/web2/img/button2.png?0eb80086f1c7c9c85aa8f1b2565ca3ac);
+}
+
+.barl .type {
+    font-size: 24px;
+    font-weight: normal;
+}		
+.barl .select {
+    font-weight: normal;
+    margin: 2px 0 0 12px;
+    color: #333;
+    background-position: right -100px;
+    padding: 0 5px 0 0;
+    display: inline-block;
+    vertical-align: top
+}
+
+.barl .select:hover {
+    background-position: right -182px;
+}
+
+.barl .select:hover .sticon {
+    background-position: 0 -141px;
+}
+
+.select .sticon {
+    display: inline-block;
+    color: #0c73c2 !important;
+    padding: 0 10px 0 15px;
+    background-position: 0 -59px;
+    font-style: normal;
+    height: 31px;
+    line-height: 31px;
+}
+
+.select .derect {
+    display: inline-block;
+    margin-left: 5px;
+    width: 8px;
+    height: 5px;
+    vertical-align: middle;
+    background: url(https://s2.music.126.net/style/web2/img/icon.png?601a3646019981bc04d77c43e6987e2a) no-repeat 0 9999px;
+    background-position: -70px -543px;
+}
+
+.barr {
+    float: right;
+    width: 93px;
+    height: 29px;
+    background: url(https://s2.music.126.net/style/web2/img/button.png?75d433a6305ec48d67ea8e859fd81b63) no-repeat 0 9999px;                   
+    background-position: 0 0;
+}
+
+.barr .tag {
+    float: left;
+    width: 46px;
+    height: 29px;
+    line-height: 29px;
+    /* font-size: 12px; */
+    text-align: center;
+    color: #333;
+    text-decoration: none;
+    
+}		
+.barr .tag:hover {
+    text-decoration: underline;
+}	
+.barr .active {
+    color: #fff;
+    background-position: 0 -32px;	
+}
+
+
+.toolbar .selectcatwindow {
+    position: absolute;
+    left: -30px;
+    top: 46px;
+    z-index: 10;
+    background-color: #FFFFFF;
+}
+
+
+
+
+
+
+
+.songlist ul {  
+    margin: 20px 0 0 -50px;
+    overflow: hidden;  
+}
+
+.songlist li {
+    float: left;
+    list-style-type: none;
+    margin: 0 0px 30px 50px;
+   
+}
+
+.songlist p a {
+    width: 140px;
+    font-size: 14px;
+    display: block;
+    word-wrap: break-word;
+    color: black;
+    text-decoration: none;
+}
+.cover {
+    position: relative;
+    width: 140px;
+    height: 140px;
+}
+.cover .coverlink {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    width: 140px;
+    height: 140px;
+    background: url(https://s2.music.126.net/style/web2/img/coverall_8.png?8a90e097721c89787d019170eb4b3cc8) no-repeat 0 9999px;
+    background-position: 0 0;
+}
+.coverimg{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.coverbot {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 140px;
+    height: 27px;
+    background: url(https://s2.music.126.net/style/web2/img/coverall.png?4792067eec65f61878f3f4807170ea55) no-repeat 0 9999px;
+    background-position: 0 -537px;
+    ;
+}
+.coverbot .coverbotsup {
+    float: left;
+    width: 14px;
+    height: 11px;
+    margin: 9px 5px 9px 10px;
+    background: url(https://s2.music.126.net/style/web2/img/iconall.png?9c637b5107f4ee070505b6933813722d) no-repeat 0 9999px;
+    background-position: 0 -24px;
+}
+.coverbot .coverbotcount {
+    float: left;
+    margin: 7px 0 0 0;
+    color: #ccc;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 16px;
+    /* font-size: 12px; */
+}
+
+.coverbot .coverbotplay {
+    position: absolute;
+    display: inline-block;
+    right: 10px;
+    bottom: 4px;
+    width: 16px;
+    height: 17px;
+    background: url(https://s2.music.126.net/style/web2/img/iconall.png?9c637b5107f4ee070505b6933813722d) no-repeat 0 9999px;         
+    background-position: 0 0;  
+}
+.coverbot .coverbotplay:hover {
+    background-position: 0 -60px;
+}
+
+.infolist {
+    height: 39px;
+}
+.infolist .descinfo{
+    margin: 8px 0 3px 0 ;
+}
+
+.creatinfo a  {
+    line-height: 17px;
+}
+.creatinfo a span {
+    color: #666;
+}
+
+.hideslip{
+    overflow: hidden;
+    white-space: nowrap;
+    word-wrap: normal;
+    text-overflow: ellipsis;
+}
+
+.show {
+    margin-top: 400px;
+}
+
+.fenye {
+    margin: 20px 0;
+    text-align: center;
+}

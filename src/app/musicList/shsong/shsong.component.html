@@ -1,0 +1,86 @@
+<div class="schsongconter">
+  <div class="sch-txt">
+    搜索“王菲”，找到
+    <span class="red">
+      600
+    </span>首单曲
+  </div>
+
+  <div class="tablebarbox">
+
+    <ul class="bar clear">
+      <li>
+        <a href="">单曲</a>
+      </li>
+      <li>
+        <a href="">歌手</a>
+      </li>
+      <li>
+        <a href="">专辑</a>
+      </li>
+      <li>
+        <a href="">视频</a>
+      </li>
+      <li>
+        <a href="">歌词</a>
+      </li>
+      <li>
+        <a href="">歌单</a>
+      </li>
+      <li>
+        <a href="">主播电台</a>
+      </li>
+      <li>
+        <a href="">用户</a>
+      </li>
+    </ul>
+  </div>
+  <div class="data">
+
+    <div *ngFor="let item of searchMusics ; let in = index" class="items clear" [ngClass]="{ 'rowwrap' : in%2 != 0 }">
+
+      <div class="play ellipsis">
+        <i class="listicon" title="播放" (click)=" playingone(item) "></i>
+      </div>
+
+      <div class="name ellipsis">
+        <!-- <a href="" class="mainname">
+          {{item?.song}}
+        </a> -->
+        <a *ngIf="item?.songId" [routerLink]="[ '../../find/songinfo/detail',item?.songId ]" routerLinkActive="active" class="mainname" > {{item?.song}} </a>
+       
+        <b class="supname">
+          (Fleet of Time)
+        </b>
+        <a href="" class="mvicon">
+        </a>
+      </div>
+
+      <div class="addbtns ellipsis">
+        <span class="list listicon"></span>
+        <a href="" class="collection listicon"></a>
+        <a href="" class="share listicon"></a>
+        <a href="" class="down listicon"></a>
+      </div>
+
+      <div class="singer ellipsis">
+        <a *ngIf="item?.singerId" [routerLink]="[ '../../find/artilist/onesg',item?.singerId ]" routerLinkActive="active" class="mainname" > {{item?.singer}} </a>
+      </div>
+
+      <div class="album ellipsis">
+        <a href="#">《{{item?.alName}}》</a>
+        <!-- 路径都弄好只需要添加路由参数。专辑的ID -->
+        <!-- <a *ngIf="item?.等待searchMusic类添加专辑ID" [routerLink]="[ '../../find/album/info',item?.等待searchMusic类添加专辑ID ]" routerLinkActive="active" class="album ellipsis" > 《{{item?.alName}}》 </a> -->
+      </div>
+
+      <div class="duration ellipsis">
+        {{item?.timeTotal | timeformat}}
+      </div>
+
+    </div>
+  </div>
+
+  <div class="fenye">
+    <app-page [pageTotalInput]="song"  [pageIndex] = "pageIndex+1" (pageIndexEvent)="search($event)"></app-page>
+  </div>
+</div>

@@ -1,0 +1,38 @@
+
+.typel {
+    width: 160px;
+    padding: 51px 10px 40px; 
+    background-color: #F9F9F9;
+}
+.titleb .name {
+    font-size: 16px;
+    color: #333;
+    padding-left: 14px;
+    height: 25px;
+}
+
+.item > a {
+    display: block;
+    height: 29px;
+    line-height: 29px;
+    padding-left: 27px;
+    color: #333;
+    background: url(https://s2.music.126.net/style/web2/img/singer.png?bf5666be64d06182589c9bc722599a7d) no-repeat 0 9999px;
+    ;
+    background-position: 0 -30px;
+}
+
+.item .routeractive {
+    background-position: 0 0;
+    color: rgb(194, 12, 12);
+}
+
+
+.addpm {
+    padding-top: 16px;
+    margin-top: 5px;
+    margin-bottom: 2px;
+    border-top: 1px solid #d3d3d3;
+}
+
+

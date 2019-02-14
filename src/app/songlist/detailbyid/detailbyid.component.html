@@ -1,0 +1,168 @@
+<div class="songstab">
+
+  <div class="songlists clear">
+    <div class="songstopleft">
+      <img [src]=' collection?.coverImgUrl + "?param=200y200" '>
+      <span class="mask"></span>
+
+    </div>
+    <div class="songstopright">
+      <div class="title clear">
+        <i class="icontype"></i>
+        <div class="desc">
+          <h2>{{collection?.name}}</h2>
+        </div>
+      </div>
+
+      <div class="update clear">
+        <a href="#" class="nikeimg floatx">
+          <img class="floatx" [src]=' collection?.avatarUrl + "?param=40y40" ' />
+        </a>
+        <span class="nikename floatx">
+          <a href="#" class="link">{{collection?.nickname}}</a>
+        </span>
+        <i class="supimg floatx"></i>
+        <span class="floatx">
+          {{collection?.updateTime | date:"yyyy-MM-dd"}} 创建
+        </span>
+
+      </div>
+
+      <div class="btngroup clear">
+
+        <span href="#" class="playlist floatx" (click)="pushIds()">
+          <i class="iconcontainer">
+            <span class="playbtn icon"></span> 播放
+          </i>
+        </span>
+        <span href="#" class="playadd floatx icon"></span>
+        <span class="recode">
+          <i class="recodeicon icon">( {{collection?.subscribedCount | towan}} )</i>
+        </span>
+        <span class="share">
+          <i class="shareicon icon">({{collection?.shareCount | towan }})</i>
+        </span>
+        <span class="down">
+          <i class="downicon icon">下载</i>
+        </span>
+        <span class="recommo">
+          <i class="recommoicon icon">({{collection?.commentCount | towan }})</i>
+        </span>
+      </div>
+
+      <div class="tags clear">
+        <span class="tagtitle">
+          标签:
+        </span>
+        <a *ngIf="collection?.tags[0]" [routerLink]=" [ '../../collection',collection?.tags[0] ]"
+          class="taglist">{{collection?.tags[0]}}</a>
+        <a *ngIf="collection?.tags[1]" [routerLink]=" [ '../../collection',collection?.tags[1] ]"
+          class="taglist">{{collection?.tags[1]}}</a>
+        <a *ngIf="collection?.tags[2]" [routerLink]=" [ '../../collection',collection?.tags[2] ]"
+          class="taglist">{{collection?.tags[2]}}</a>
+      </div>
+
+      <div *ngIf="collection?.description" class="srccontainer">
+
+        <div>
+            介绍&nbsp;:&nbsp;&nbsp;   
+            <span [innerHTML]=" collection?.description['str1']" class="one"></span>  
+        </div>
+
+        <div *ngIf="isShow && collection?.description['str2']" [innerHTML]="collection?.description['str2']" class="two">
+        </div>  
+
+        <span *ngIf="collection?.description['str2']" (click)="showing()" class="showmore">展开
+          <i class="indector"></i>
+        </span>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="boarddetail">
+    <div class="boardlistbar clear">
+      <h3 class="tablist title">歌曲列表</h3>
+      <span class="tablist number">{{collection?.trackCount}}首歌曲</span>
+      <span class="count number">
+        播放:
+        <span class="red">{{collection?.playCount}}</span> 次</span>
+    </div>
+
+    <div class="songlist">
+
+      <ul class="clear ullist">
+        <li class="tab">
+          <div class="floatx indector">
+
+          </div>
+
+          <div class="floatx title">
+            歌曲标题
+          </div>
+          <div class="floatx duration">
+            时长
+          </div>
+          <div class="floatx singer">
+            歌手
+          </div>
+          <div class="floatx alum">
+            专辑
+          </div>
+        </li>
+
+        <li *ngFor="let item of searchMusics ;let indeof =index" class="listdetail" [ngClass]=' {"wrap":indeof%2==0} '>
+
+          <div class="floatx indector ">
+            <div class="floatx index">
+              {{indeof+1}}
+            </div>
+            <span class="play" (click)="playingone(item)">
+            </span>
+          </div>
+
+          <div class="floatx title">
+
+            <div class="titlesup">
+              <a *ngIf="item?.songId" [routerLink]="['../../../songinfo/detail',item?.songId]" class="name">
+                {{item?.song}}
+              </a>
+            </div>
+
+          </div>
+          <div class="floatx duration">
+
+            <div class="times">
+              {{item?.timeTotal | timeformat}}
+            </div>
+
+            <div class="tabbtns">
+              <span title="添加到播放列表" class="addplay"></span>
+              <span title="收藏" class="record"></span>
+              <span title="分享" class="share"></span>
+              <span title="下载" class="down"></span>
+            </div>
+
+          </div>
+
+          <div class="floatx singer">
+            {{item?.singer}}
+          </div>
+
+          <div class="floatx alum">
+            {{item?.alName}}
+          </div>
+
+        </li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="commontc">
+    <app-common [type]=" 'A_PL_0_' "></app-common>
+  </div>
+
+</div>

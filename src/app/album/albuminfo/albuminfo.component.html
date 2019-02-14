@@ -1,0 +1,139 @@
+<div class="alldata clear">
+
+  <div class="head floatx">
+    <div>
+      <div class="aleft floatx">
+        <img [src]="infoAndLists?.collection.coverImgUrl + '? param=177y177' " alt="" class="alimg floatx">
+        <a href="" class="allink floatx"></a>
+      </div>
+
+      <div class="aright">
+
+        <div class="info">
+          <div class="title">
+            <i class="ticon"></i>
+            <span class="tdetail">
+              {{infoAndLists?.collection.name}}
+            </span>
+          </div>
+          <!-- <div class="sup">{{ searchMusic?.songsup}}电视剧《扶摇》片尾曲/人物主题曲</div> -->
+          <p class="pdiv">
+            <span>
+              歌手:
+            </span>
+            <!-- <a *ngIf="infoAndLists?.collection.singername" [routerLink]=' [ "../songinfo/detail" , searchMusic?.singerId ] ' class="singerlink">{{infoAndLists?.collection.singername}}</a> -->
+            <a href="" class="singerlink">{{infoAndLists?.collection.singername}}</a>
+          </p>
+          <p class="pdiv">
+            发行时间 : {{infoAndLists?.collection.publishTime | date:'yyyy-MM-dd'}}
+          </p>
+
+          <p class="pdiv">
+            发行公司 ：{{infoAndLists?.collection.publistComp}}
+          </p>
+        </div>
+        <div class="btngroup clear">
+          <span href="#" class="playlist floatx" (click)="pushIds()">
+            <i class="iconcontainer">
+              <span class="playbtn icon"></span> 播放
+            </i>
+          </span>
+          <span href="#" class="playadd floatx icon"></span>
+          <span class="recode">
+            <i class="recodeicon icon">收藏</i>
+          </span>
+          <span class="share">
+            <i class="shareicon icon">{{infoAndLists?.collection.shareCount}}</i>
+          </span>
+          <span class="down">
+            <i class="downicon icon">下载</i>
+          </span>
+          <span class="recommo">
+            <i class="recommoicon icon">{{infoAndLists?.collection.commentCount}}</i>
+          </span>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="alubinfo">
+      <p>专辑介绍</p>
+      <!-- {{infoAndLists?.collection.description}} -->
+    </div>
+
+    <div class="songlist">
+      <div class="boardlistbar clear">
+        <h3 class="tablist title">包含歌曲列表</h3>
+        <span class="tablist number">{{infoAndLists?.searchMusic.length}}首歌曲</span>
+      </div>
+
+      <ul class="clear ullist">
+        <li class="tab">
+          <div class="floatx indector">
+          </div>
+          <div class="floatx title">
+            歌曲标题
+          </div>
+          <div class="floatx duration">
+            时长
+          </div>
+          <div class="floatx singer">
+            歌手
+          </div>
+        </li>
+
+        <li *ngFor="let item of infoAndLists?.searchMusic ;let indeof =index" class="listdetail" [ngClass]=' {"wrap":indeof%2==0} '>
+          <div class="floatx indector ">
+            <div class="floatx index">
+              {{indeof+1}}
+            </div>
+            <span class="play" (click)="playingone(item)">
+            </span>
+          </div>
+
+          <div class="title floatx">
+
+            <div class="titlesup">
+              <a *ngIf="item?.songId" [routerLink]="['../../../songinfo/detail',item?.songId]" class="name">
+                {{item?.song}}
+              </a>
+              <span class="songsupx">{{item?.songsup}}</span>
+            </div>
+
+          </div>
+          <div class="floatx duration">
+
+            <div class="times">
+              {{item?.timeTotal | timeformat }}
+            </div>
+
+            <div class="tabbtns">
+              <span title="添加到播放列表" class="addplay"></span>
+              <span title="收藏" class="record"></span>
+              <span title="分享" class="share"></span>
+              <span title="下载" class="down"></span>
+            </div>
+
+          </div>
+
+          <div class="floatx singer">
+            {{item?.singer}}
+          </div>
+
+        </li>
+      </ul>
+
+    </div>
+
+    <div class="commontc">
+      <app-common [type]=" ' R_AL_3_' "></app-common>
+    </div>
+
+  </div>
+
+  <div class="simler floatx">
+    右边展示喜欢这张专辑的人
+  </div>
+
+</div>

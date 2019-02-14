@@ -1,0 +1,27 @@
+<div class="albums clear">
+  <ul class="alul clear">
+    <li *ngFor="let item of albums" class="alitem floatx">
+
+      <div class="topimg">
+        <img [src]="item?.alNPicUrl + '?param=120y120' " class="alimg floatx" />
+        <a *ngIf="item?.alId"  [routerLink]=' [ "../../../../album/info" , item?.alId ]'  class="allink floatx"></a> 
+      </div>
+      <div class="botdesc">
+        <p class="altxt">
+          <span class="link floatx">      
+            <a *ngIf="item?.alId"  [routerLink]='["../../../../album/info",item?.alId]' class="botlink">{{item?.alName}}</a>
+          </span>
+
+        </p>
+        <p class="altime">
+          <span class="decs">
+            {{item?.alPublishTime | date:'yyyy.MM.dd'}}
+          </span>
+        </p>
+
+      </div>
+
+    </li>
+  </ul>
+
+</div>

@@ -1,0 +1,103 @@
+
+
+/* .barandlist {
+     width: 718px; 
+     border: 1px solid red;
+} */
+.sbar {
+    /* width: 718px;  */
+    height: 40px;
+    border-bottom: 2px solid #c20c0c;
+    margin-bottom: 20px;
+}
+
+.sbar .barname {
+    font-size: 24px;
+    font-weight: normal;
+    float: left;
+}
+
+.sbar .more {
+    float: right;
+    color: #333;
+    /* font-size: 12px; */
+    margin-top: 16px;
+}
+
+.singerlist {
+    width: 720px;
+}
+            
+.data {
+    margin-left: -17px;
+}
+
+.liitem {
+    padding: 0 0 30px 17px;
+    float: left;
+}
+
+.cov {
+    position: relative;
+    width: 130px;
+    height: 130px;
+    margin-bottom: 6px;
+}
+
+.cov img {
+    display: block;
+}
+
+.cov .link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(https://s2.music.126.net/style/web2/img/coverall.png?4792067eec65f61878f3f4807170ea55) no-repeat 0 9999px;
+    background-position: 0 -680px;
+}
+
+.bot {
+    height: 18px;
+    width: 130px;
+    line-height: 18px;
+}
+
+.bot .name {
+    color: #000;
+    /* font-size: 12px; */
+    max-width:80%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+}
+
+.bot .userhome {
+    float: right;
+    margin-left: 4px;
+}
+
+.bot .userhome .sicon {
+    display: block;
+    width: 17px;
+    height: 18px;
+    background: url(https://s2.music.126.net/style/web2/img/icon.png?601a3646019981bc04d77c43e6987e2a) no-repeat 0 9999px;
+    background-position: 0 -740px;
+}
+
+.newlipadding {
+    padding: 0 0 0 17px;
+    height: 30px;
+}
+
+.newlipadding .userhome {
+    float: left;
+}
+
+
+.addline {
+    padding-top: 12px;
+    border-top: 1px dotted #999;
+}

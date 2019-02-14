@@ -1,0 +1,70 @@
+.pages>a {
+    text-align :left;
+    display: inline-block;   
+    border: 1px solid #ccc; 
+    border-radius: 2px;
+    margin: 0 1px 0 2px;
+    cursor: pointer;
+    color: #333;
+    vertical-align: middle;
+    background-color: #fff;
+    background: url(https://s2.music.126.net/style/web2/img/button.png?75d433a6305ec48d67ea8e859fd81b63) no-repeat 0 9999px;
+    user-select: none;
+}
+
+.pages>a:hover {
+    text-decoration: none;
+}
+
+.pages .pagenum {
+    padding: 0 8px;
+    height: 22px; 
+    line-height: 22px;   
+}
+
+.pages .pagenum:hover {
+    border-color: #666;
+}
+
+.pages .check {
+    background-position: 0 -650px;
+    border-color: #A2161B;
+    color: #fff;
+}
+
+.pages .first , .pages .end{
+    height: 24px;
+    line-height: 24px;  
+}
+
+.pages .first  {
+    width: 47px;  
+    padding-left: 22px;
+    background-position: 0 -560px;
+}
+
+.pages .firststopclick {
+    background-position: 0 -620px;
+    color: #cacaca;
+    cursor: default;
+}
+
+.pages .endstopclick {
+    background-position: -75px -620px;
+    color: #cacaca;
+    cursor: default;
+}
+
+.pages .first:hover {
+    background-position: 0 -590px;
+}
+
+.pages .end {
+    width: 57px;
+    padding-left: 12px;
+    background-position: -75px -560px;
+}
+
+.pages .end:hover {
+    background-position: -75px -590px;
+}

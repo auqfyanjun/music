@@ -1,0 +1,67 @@
+<div class="songtotal">
+
+  <div class="toolbar clear">
+    <h3 class="barl floatx">
+      <span class="type">
+        {{title}}
+      </span>
+
+      <a href="#" class="select sicon" (click)="selectCatWindow()">
+        <i class="sticon sicon">
+          选择分类
+          <em class="derect"></em>
+        </i>
+      </a>
+    </h3>
+
+    <div class="barr">
+      <a href="" class="tag active">热门</a>
+      <a href="" class="tag">最新</a>
+    </div>
+
+    <div class="selectcatwindow">
+      <app-cattype [(hidden)]="selectShow"></app-cattype>
+    </div>
+
+  </div>
+
+  <div class="songlist">
+    <ul>
+      <li *ngFor="let item of collection">
+
+        <div class="cover">
+
+          <a *ngIf=" item?.id " [routerLink]="['../../detailby',item?.id]" [title]=" item?.name " class="coverlink">
+            <img [src]=' item?.coverImgUrl + "?param=140y140" ' class="coverimg" />
+          </a>
+
+          <div class="coverbot">
+            <span class="coverbotsup"></span>
+            <span class="coverbotcount"> {{ item?.playCount | towan }}</span>
+            <a href="#" class="coverbotplay"></a>
+          </div>
+
+        </div>
+
+        <div class="infolist">
+          <p class="descinfo ">
+            <a href="" class="hideslip">
+              {{item?.name}}
+            </a>
+          </p>
+          <p class="creatinfo">
+            <a [href]="item?.aLinkUrl" class="hideslip">
+              <span>by</span>
+              <span>{{item?.nickname}}</span>
+            </a>
+          </p>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="fenye">
+    <app-page [pageTotalInput]="trans()" [pageIndex]="pageIndex+1" (pageIndexEvent)="getPageIndex($event)"></app-page>
+  </div>
+
+</div>

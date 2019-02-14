@@ -1,0 +1,118 @@
+a {
+  color: #333;
+}
+
+.uicon {
+  background: url(https://s2.music.126.net/style/web2/img/index/index.png?a78ad776294be5ba6e55bfa73111a5a2) no-repeat 0 9999px;
+}
+
+.scontainer {
+  margin-top: 15px;
+}
+
+.uinfo {
+  height: 126px;
+  background-position: 0 0;
+}
+
+.uinfo .note {
+  width: 205px;
+  margin: 0 auto;
+  padding: 16px 0;
+  line-height: 22px;
+  color: #666;
+}
+
+.uinfo .login {
+  margin: 0 auto;
+  display: block;
+  width: 100px;
+  height: 31px;
+  line-height: 31px;
+  text-align: center;
+  color: #fff;
+  background-position: 0 -195px;
+  text-decoration: none;
+  /* text-shadow: 0 1px 0 #8a060b; */
+}
+
+.uinfo .login:hover {
+  background-position: -110px -195px;
+}
+
+.singerbar {
+  width: 210px;
+  height: 23px;
+  margin: 0 20px;
+  color: #333;
+  border-bottom: 1px solid #ccc;
+}
+
+.singerbar span,
+  {
+  float: left;
+}
+
+.singerbar a {
+  float: right;
+  color: #666;
+}
+
+.singContainer {
+  height: 62px;
+  /* width: 210px; */
+  margin-top: 14px;
+}
+
+.slist {
+  margin: 6px 0 14px 20px;
+  overflow: hidden;
+}
+
+.singer,
+.singerimg {
+  float: left;
+  display: block;
+  color: #666;
+}
+
+.stitle {
+  float: left;
+  height: 60px;
+  width: 132px;
+  padding-left: 14px;
+  border: 1px solid #e9e9e9;
+  border-left: none;
+}
+
+.stitle:hover {
+  background: #f4f4f4;
+}
+
+.stitle h4 {
+  font-size: 14px;
+  padding: 0;
+  margin: 8px 0 0 0;
+}
+
+.stitle p {
+  width: 90%;
+  color: #666;
+  margin: 8px 0 0 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.singin {
+  text-align: center;
+  display: block;
+  width: 210px;
+  height: 31px;
+  line-height: 31px;
+  margin-left: 20px;
+  border: 1px solid #333;
+  border-radius: 4px;
+  font-weight: bold;
+  box-sizing: border-box;
+}

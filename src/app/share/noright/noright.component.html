@@ -1,0 +1,60 @@
+<!-- <div >
+  <div class="mask"></div>
+  <div class="box"  appDrop [targetClassName] = "'bar'">
+    <div class="right">
+      <div class="bar" >
+        <p class="tit">{{tit}}</p>
+      </div>
+      <div class="content">
+        <div class="dec">
+          <div class="none">
+            <i class="cry"></i>
+            <div class="crytxt">版权方要求,当前歌曲仅限开通音乐包使用</div>
+          </div>
+
+          <div class="ntwo">
+            <a href="" class="bor ic">
+              <i class="pack ic">开通音乐包</i>
+            </a>
+            <a href="" class="buy">2元购买此单曲</a>
+          </div>
+        </div>
+      </div>
+      <span title="关闭窗口" class="closebtn" (click)="close()"></span>
+    </div>
+  </div>
+ 
+</div> -->
+
+
+<div>
+ 
+  <div class="mask"></div>
+  
+  <div class="right" appDrop [targetClassName]="'bar'">
+
+    <div class="bar">
+      {{tit}}
+    </div>
+
+    <div class="content">
+      <div class="dec">
+        <div class="none">
+          <i class="cry"></i>
+          <div class="crytxt">版权方要求,当前歌曲仅限开通音乐包使用</div>
+        </div>
+
+        <div class="ntwo">
+          <a href="" class="bor ic">
+            <i class="pack ic">开通音乐包</i>
+          </a>
+          <a href="" class="buy">2元购买此单曲</a>
+        </div>
+      </div>
+    </div>
+
+    <span title="关闭窗口" class="closebtn" (click)="close()"></span>
+    
+  </div>
+
+</div>

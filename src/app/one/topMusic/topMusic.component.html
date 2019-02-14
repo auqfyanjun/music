@@ -1,0 +1,57 @@
+<div class="top-conter">
+
+  <app-asupbar [barTitle]=" '热门推荐' " [routerPath]=" '../songlist/collection' " [routerParam]=" '全部' ">
+    <div class="topmusiccontainer">
+      <ul class="lulsup">
+        <li>
+          <a [routerLink]="['../songlist/collection','华语']">华语</a>
+          <span class="space">|</span>
+        </li>
+
+        <li>
+          <a [routerLink]="['../songlist/collection','流行']">流行</a>
+          <span class="space">|</span>
+        </li>
+
+        <li>
+          <a [routerLink]="['../songlist/collection','摇滚']">摇滚</a>
+          <span class="space">|</span>
+        </li>
+
+        <li>
+          <a [routerLink]="['../songlist/collection','民谣']">民谣</a>
+          <span class="space">|</span>
+        </li>
+
+        <li>
+          <a [routerLink]="['../songlist/collection','电子']">电子</a>
+        </li>
+      </ul>
+    </div>
+  </app-asupbar>
+
+  <div class="dataList">
+    <ul>
+      <li *ngFor="let item of recomms" class="listli">
+        <div class="cover">
+          <a *ngIf=" item?.url " [routerLink]="['../songlist/detailby',item?.url]" [title]=" item?.desc " class="cover-link">
+            <img [src]=' item?.picUrl + "?param=140y140" ' class="coverimg" />
+          </a>
+
+          <div class="cover-bot">
+            <span class="sup"></span>
+            <span class="count">{{ item?.playcount }}</span>
+            <a href="#" class="play"></a>
+          </div>
+
+        </div>
+        <p>
+          <a *ngIf=" item?.url " [routerLink]="['../songlist/detailby',item?.url]" class="hideslip">
+            {{item?.desc}}
+          </a>
+        </p>
+      </li>
+    </ul>
+  </div>
+
+</div>

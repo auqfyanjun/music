@@ -1,0 +1,33 @@
+<div class="singerbox clear">
+
+  <div class="singerleft floatx">
+
+    <div class="singerinfo">
+
+      <div class="nameinfo clear">
+        <h2 class="name floatx">{{singerInfo?.name}} </h2>
+        <h3 class="namesup floatx">{{singerInfo?.alias}}</h3>
+      </div>
+
+      <img class="singerimg" [src]=" singerInfo?.picUrl+'?param=640y300' " />
+
+      <div class="listbar clear">
+        <a [routerLink]="[ 'topwushi' ]" routerLinkActive="active" class="link">热门50单曲</a>
+
+        <a [routerLink]="[ 'album' ]" routerLinkActive="active" class="link">所有专辑</a>
+
+        <a [routerLink]="[ 'mv' ]" routerLinkActive="active" class="link">相关MV</a>
+
+        <a [routerLink]="[ 'desc' ]" routerLinkActive="active" class="link">歌手介绍</a>
+      </div>
+
+      <router-outlet></router-outlet>
+
+    </div>
+  </div>
+  
+  <div class="singerright floatx">
+    我是右边展示热门歌手（ 男、女、乐队 ）
+  </div>
+
+</div>

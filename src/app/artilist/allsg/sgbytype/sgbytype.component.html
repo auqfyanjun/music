@@ -1,0 +1,19 @@
+<app-singerlist [singerInfo]="singerInfo" [barTitle]="title" [hasBotModel]="false" >
+    <!-- 插槽，父元素的内容插入到子元素内部 -->
+    <div class="az">
+        <ul class="con clear">
+
+            <li class="itemli newwidth">
+                <a [routerLink]="[ '热门','0']" routerLinkActive="active" class="lia newlia">热门</a>
+            </li>
+
+            <li *ngFor="let item of data; let i=index" class="itemli">
+                <a [routerLink]="[ item , item.charCodeAt() ]" routerLinkActive="active" class="lia">{{item}}</a>
+            </li>
+
+            <li class="itemli newwidth">
+                <a [routerLink]="[ '其他','27']" routerLinkActive="active" class="lia">其他</a>
+            </li>
+        </ul>
+    </div>
+</app-singerlist>
